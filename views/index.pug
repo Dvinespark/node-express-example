@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.container
+    div.text-center
+      h2 Welcome to the Worlds Best Kitchen
+      hr
+      h3 Please select the menu from the below
+
+    .container.m-5.text-center
+    .card-deck.p-1
+      each category in food_category
+        .card
+          a(href='/category/?category=' + category.name)
+            img.card-img-top.card-image-height(src="images/" + category.image_name alt='dairy')
+            .card-body
+              h5.card-title=category.name
+              p.card-text=category.short_description

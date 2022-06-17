@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	.container.text-center
+		h2 Welcome to the Worlds Best Kitchen
+		hr
+		h3 More information on #{title.charAt(0).toUpperCase() + title.slice(1)}
+
+	.container.m-5.text-center
+		p= food_category[0].long_description
+		hr
+		.row
+			each item_img in food_category[0].more_images
+				.col-md-4
+					img.card-image-height(src='/images/'+item_img alt=title)

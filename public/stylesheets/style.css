@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.custom-img-size {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.card-image-height {
+  height: 250px;
+  width: 250px;
+  image-rendering: pixelated;
+}
+
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0);
+}
